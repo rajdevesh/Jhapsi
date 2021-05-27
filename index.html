@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jhapsi's</title>
+	<style type="text/css">
+		body{
+
+			color: black;
+		}
+		#Background{
+			background-image: url('photo-1521389508051-d7ffb5dc8a40.jpg');
+			background-repeat: no-repeat;
+			background-height: 1000px;
+			width: auto;
+			height: auto;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: absolute;
+			margin-top: 00px;
+			padding-top: 20px;
+			padding-bottom: 50px;
+
+		}
+
+		#get{
+			margin-left: 120px;
+			margin-top: 20px;
+			font-size: 15px;
+			color: #fff;
+		}
+		#Log{
+			margin-left: 1100px;
+			font-size: 22px;
+			color: #fff;
+			margin-top: -15px;
+		}
+		#Sign{
+			margin-left: 1180px;
+			margin-top: -26px;
+			font-size: 22px;
+			color: #fff;
+		}
+		input {
+			margin-top: 0.5em;
+			outline: none;
+			padding: 0.75em;
+			border: none;
+			min-width: 50%;
+			margin-left: 300px;
+			}
+		.dataentry:focus {
+			background-color: #22de7a;
+			color: #fff;
+			font-size: 50px;
+			text-align: center;
+			}
+		h1{
+			color: #fff;
+			font-size: 70px;
+			margin-left: 550px;
+			margin-top: 200px;
+		}
+		h2{
+			color: #fff;
+			font-size: 40px;
+			margin-left: 300px;
+			margin-top : 20px;	
+		}
+		#Block{
+			padding-top: 50px;
+			display: inline-flex;
+			padding-left: 70px;
+		}
+		#Block1{
+			height: 260px;
+			width: 250px;
+			background-color: rgb(247, 243, 237);
+			color: rgb(71, 70, 69);
+			margin-left: 30px;
+			font-family: Okra,Helvetica,sans-serif;
+			border-style: solid;
+			border-color: rgb(245, 243, 240);
+			border-radius: 10px 10px 10px 10px;
+		}
+		#Block1:hover{
+			width: 260px;
+			height: 270px;
+			font-size: 80px;
+			text-align: center;
+		}
+		#Block2{
+			height: 260px;
+			width: 250px;
+			background-color: rgb(247, 243, 237);
+			color: rgb(71, 70, 69);
+			margin-left: 30px;
+			font-family: Okra,Helvetica,sans-serif;
+			border-style: solid;
+			border-color: rgb(245, 243, 240);
+			border-radius: 10px 10px 10px 10px;
+		}
+		#Block2:hover{
+			width: 260px;
+			height: 270px;
+			font-size: 50px;
+			text-align: center;
+		}
+		#Block3{
+			height: 260px;
+			width: 250px;
+			background-color: rgb(247, 243, 237);
+			color: rgb(71, 70, 69);
+			margin-left: 30px;
+			font-family: Okra,Helvetica,sans-serif;
+			border-style: solid;
+			border-color: rgb(245, 243, 240);
+			border-radius: 10px 10px 10px 10px;
+		}
+		#Block3:hover{
+			width: 260px;
+			height: 270px;
+			font-size: 50px;
+			text-align: center;
+		}
+		#Block4{
+			height: 260px;
+			width: 250px;
+			background-color: rgb(247, 243, 237);
+			color: rgb(71, 70, 69);
+			margin-left: 30px;
+			font-family: Okra,Helvetica,sans-serif;
+			border-style: solid;
+			border-color: rgb(245, 243, 240);
+			border-radius: 10px 10px 10px 10px;
+		}
+		#Block4:hover{
+			width: 260px;
+			height: 270px;
+			font-size: 50px;
+			text-align: center;
+		}
+		#Ice{
+			border-style: solid;
+			border-radius: 10px 10px 10px 10px;
+		}
+		#foodd{
+			border-style: solid;
+			border-radius: 10px 10px 10px 10px;
+		}
+		#foddyyyy{
+			border-style: solid;
+			border-radius: 10px 10px 10px 10px;
+		}
+		#Ahh{
+			border-style: solid;
+			border-radius: 10px 10px 10px 10px;
+		}
+		p{
+			display: block;
+		    margin-block-start: 1em;
+		    margin-block-end: 1em;
+		    margin-inline-start: 0px;
+		    margin-inline-end: 0px;
+		    text-align: center;
+		    font-weight: 500;
+		    font-size: 1.4rem;
+		    line-height: 1.2rem;
+		    font-family: Okra,Helvetica,sans-serif;
+
+		}
+		h3{
+			color: rgb(46, 46, 45);
+			font-size: 50px;
+			margin-left: 150px;
+		}
+		h4{
+			color: grey;
+			font-size: 20px;
+			margin-left: 150px;
+			margin-top: -40px;
+		}
+		h5{
+			color: rgb(245, 112, 130);
+			margin-left: 1090px;
+			font-size: 15px;
+			margin-top: -42px;
+		}
+		#Collections{
+			display: flex;
+			padding-left: 70px;
+		}
+			#Snacks{
+				height: 300px;
+				width: 250px;
+				color: rgb(12, 235, 38);
+				font-size: 25px;
+				border-style: solid;
+				border-color: white;
+				border-width: 1px;
+				margin-right: 50px;
+				background-image: url(snacks.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				max-width: 50%;
+			}
+			#Sports{
+				height: 300px;
+				width: 250px;
+				color: rgb(12, 235, 38);
+				font-size: 25px;
+				border-style: solid;
+				border-color: white;
+				border-width: 1px;
+				margin-right: 50px;
+				background-image: url(dinner.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				max-width: 50%;
+			}
+			#Trending{
+				height: 300px;
+				width: 250px;
+				color: rgb(55, 56, 59);
+				font-size: 25px;
+				border-style: solid;
+				border-color: white;
+				border-width: 1px;
+				margin-right: 50px;
+				background-image: url(Chinese.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				max-width: 50%;
+			}
+			#Delhi_NCR{
+				height: 300px;
+				width: 250px;
+				color: rgb(55, 56, 59);
+				font-size: 25px;
+				border-style: solid;
+				border-color: white;
+				border-width: 1px;
+				margin-right: 50px;
+				background-image: url(Aranya_Devi.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				max-width: 100%;
+			}
+			h6{
+				font-size: 50px;
+				color: rgb(214, 211, 210);
+				margin-left: 250px;
+			}
+			#Localities{
+				display: inline-flex;
+			}
+			#D1{
+				border-style: solid;
+				border-radius: 1px;
+				border-color: rgb(214, 211, 210);
+				height: 70px;
+				width: 250px;
+				font-size: 2rem;
+				line-height: 1.2;
+				font-weight: 400;
+				color: rgb(28, 28, 28);
+				margin: 0px;
+				font-family: Okra,Helvetica,sans-serif;
+				display: block;
+				}
+			#NCR{
+					margin-top: -100px;
+					
+				}
+			a{
+				color: red;
+				text-decoration: none;
+			}
+			
+	</style>
+</head>
+<body>
+	<section id="Background">
+		<div id="get">
+		Get the App
+	</div>
+	<div id="Log">
+		<a href="Jhapsi's user login.html"> Log In</a>
+	</div>
+	<div id="Sign">
+		<a href="Jhapsi's registration.html"> Sign Up</a>
+	</div>
+
+	<div>
+		<h1>Jhapsi's</h1>
+		<h2>Discover the best food and drinks in Arrah, Bhojpur</h2>
+			<input class="dataentry" type="text" name="Search Food Here"
+			placeholder="Search for resturant, cuisine or a Dish Here">
+		</div>
+	</section>
+	<section id="Block">
+		<div id="Block1">
+			<a href="OrderFoodonline.html"><img class="Ice" src="Ice.jpg" height="200px" width="250px;"><br/>
+			<p> Order food online</p></a>
+		</div>
+		<div id="Block2">
+			<a href="Go out for a meal.html"><img class="foodd" src="foodd.jpg"  height="200px" width="250px;"><br/>
+			<p>Go out for a meal</p></a>
+		</div>
+		<div id="Block3">
+			<a href="Nightlife.html"><img class="foddyyyy" src="Nightlife.jpg"  height="200px" width="250px;"><br/>
+			<p>Nightlife & Clubs</p></a>
+		</div>
+		<div id="Block4">
+			<a href="#"><img class="Ahh" src="Ahh...jpg"  height="200px" width="250px;">
+			<p>Jhapsi's Pro</p></a>
+		</div>
+	</section>
+	<section>
+		<h3>Collections</h3>
+		<h4>Explore curated lists of top restaurants, cafes, Dhaba's, and stalls in Arrah, Bhojpur, based on trends	</h4>
+		<h5>All collection in Bhojpur..</h5>
+	</section>
+	<section id="Collections">
+			<div id="Snacks">
+			<a href="Evening Snacks Special.html"><span> Evening Snacks Specials</span></a>
+		</div>
+		<div id="Sports">
+			<a href="Jhapsi's Dinner Special.html"> <span>Dinner Special</span></a>
+		</div>
+		<div id="Trending">
+			<a href="Trending this week.html"><span>Trending This week</span><br/></a>
+		</div>
+		<div id="Delhi_NCR">
+			<a href="Bhojpur.html"><span id="NCR">Best of Bhojpur</span><br/></a>
+		</div>
+	</section>
+	
+	
+</body>
+</html>
