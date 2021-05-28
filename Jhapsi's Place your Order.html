@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jhapsi's Place your Order</title>
+	<style type="text/css">
+		body{
+			background-color: rgb(102, 176, 157);
+			color: white;
+			font-size: 20px;
+
+		}
+	</style>
+	<script>
+		// Form Validation
+		function validate()
+		{
+			/*
+			Country: India =document
+			state: Bihar = Form1
+			city: Arrah = FName
+			document.Form1.FName
+			*/		
+		if(document.form1.FName.value=="")
+				{
+					document.getElementById("fnv").innerHTML="*Please Enter Your full Name";
+					document.form1.FName.focus();
+					return false;
+				}
+				else
+				{
+					document.getElementById("fnv").innerHTML="";
+					
+				}
+				if(document.form1.Email.value=="")
+				{
+					document.getElementById("ev").innerHTML="*Please Enter Your Email Address";
+					document.form1.Email.focus();
+					return false;
+				}
+				var emailID=document.form1.Email.value;
+				atpos=emailID.indexOf("@");
+				dotpos=emailID.lastIndexOf(".");
+				if(atpos<1 || (dotpos-atpos < 2))
+				{
+					document.getElementById("ev").innerHTML="*Please Enter Proper Email Address";
+					document.form1.Email.focus();
+					return false;
+				}
+				else
+				{
+					document.getElementById("ev").innerHTML="";
+				}
+				var num=document.form1.Address.value;
+				if(document.form1.Address.value=="")
+				{
+					document.getElementById("av").innerHTML="*Please enter your full Address";
+					document.form1.Address.focus();
+					return false;
+				}
+				else{
+					document.getElementById("av").innerHTML="";
+				}
+				var num=document.form1.Mobile.value;
+				if(num=="")
+				{
+					document.getElementById("mv").innerHTML="*Please enter Mobile Number";
+					document.form1.Mobile.focus();
+					return false;
+				} 
+				else if(num.length != 10 || isNaN(num))
+				{
+					document.getElementById("mv").innerHTML="*Please enter valid mobile Number";
+					document.form1.Mobile.focus();
+					return false;
+				}
+				else
+				{
+					document.getElementById("mv").innerHTML="";
+				}
+				var num=document.form1.CardNo.value;
+				if(num=="")
+				{
+					document.getElementById("CD").innerHTML="*Please enter your card details";
+					document.form1.CardNo.focus();
+					return false;
+				} 
+				else if(num.length != 16 || isNaN(num))
+				{
+					document.getElementById("CD").innerHTML="*Please enter valid card details";
+					document.form1.CardNo.focus();
+					return false;
+				}
+				else
+				{
+					document.getElementById("CD").innerHTML="";
+				}
+				var num=document.form1.PinNo.value;
+				if(num=="")
+				{
+					document.getElementById("PN").innerHTML="*Please enter Pin Number";
+					document.form1.PinNo.focus();
+					return false;
+				} 
+				else if(num.length != 6 || isNaN(num))
+				{
+					document.getElementById("PN").innerHTML="*Please enter valid Pin Number";
+					document.form1.PinNo.focus();
+					return false;
+				}
+				else
+				{
+					document.getElementById("PN").innerHTML="";
+				}
+				var num=document.form1.OTP.value;
+				if(num=="")
+				{
+					document.getElementById("OTP").innerHTML="*Please enter OTP";
+					document.form1.OTP.focus();
+					return false;
+				} 
+				else if(num.length != 6 || isNaN(num))
+				{
+					document.getElementById("OTP").innerHTML="*Please enter valid OTP";
+					document.form1.OTP.focus();
+					return false;
+				}
+				else
+				{
+					document.getElementById("OTP").innerHTML="";
+				}
+			}
+	</script>
+</head>
+<body>
+	<h1>Jhapsi's Order Food Online</h1>
+	<h2>Place Your Order</h2>
+	<form action="Jhapsi's Order.html" method="POST" name="form1" onsubmit="return(validate());">
+		<table cellspacing="2" cellpadding="2" align="center">
+			<tr>
+				<td align="right">Full Name:</td>
+				<td><input type="text" name="FName" size="40" autofocus ></td>
+				<td id="fnv" class="vld"></td>
+			</tr>
+			<tr>
+				<td align="right">E-mail:</td>
+				<td><input type="text" name="Email" size="40"> </td>
+				<td id="ev" class="vld"></td>
+			</tr>
+			<tr>
+				<td align="right">Address:</td>
+				<td><input type="text" name="Address" size="40" maxlength="10"></td>
+				<td id="av"></td>
+			</tr>
+			<tr>
+				<td align="right">Mobile No:</td>
+				<td><input type="text" name="Mobile" size="40" maxlength="10"></td>
+				<td id="mv"></td>
+			</tr>
+			<tr>
+				<td align="right">Card Details:</td>
+				<td><input type="text" name="CardNo" size="40" maxlength="16"></td>
+				<td id="CD"></td>
+			</tr>
+			<tr>
+				<td align="right">Pin No.:</td>
+				<td><input type="text" name="PinNo" size="40" maxlength="6"></td>
+				<td id="PN"></td>
+			</tr>
+			<tr>
+				<td align="right">OTP:</td>
+				<td><input type="text" name="OTP" size="40" maxlength="6"></td>
+				<td id="OTP"></td>
+			</tr>
+			<tr>
+				<td align="right"></td>
+				<td>
+					<input type="submit" style="font-size: 20px" name="Submit">
+					<input type="reset" style="font-size: 20px" name="Reset">
+				</td>
+			</tr>
+
+		</table>
+	</form>
+	<noscript>
+		<h1>Javascript is not enabled in your browser<br/>
+			Please enable it..
+		</h1>
+	</noscript>
+</body>
+</html>
