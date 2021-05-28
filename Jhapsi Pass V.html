@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>Jhapsi's Login Password</title>
+	<style>
+		body{
+			background-color: rgb(6, 24, 74);
+			color:lime;
+			font-size: 30px;
+		}	
+	</style>
+	</head>
+	<body>
+	<marquee><h1 style="font-family: 'MV Boli';">Jhapsi's User login</h1></marquee>
+
+
+	<h1>Jhapsi's Order Food Online</h1>
+	<h2>User Registration Form</h2>
+	<form action="Login Succesful.html" method="POST" name="form1" onsubmit="return(validate());">
+		<table cellspacing="2" cellpadding="2" align="center">
+			<tr>
+				<td align="right">Password:</td>
+				<td><input type="password" name="PWD" size="40" placeholder="Please Enter your password"> </td>
+				<td id="Pass" class="vld"></td>
+			</tr>
+			<tr>
+				<td align="right">Confirm Password:</td>
+				<td><input type="password" name="CPWD" size="40" placeholder="Confirm your password"></td>
+				<td id="CPass"></td>
+			</tr>
+			<tr>
+				<td align="right"></td>
+				<td>
+					<input type="submit" style="font-size: 20px" name="Submit">
+					<input type="reset" style="font-size: 20px" name="Reset">
+				</td>
+			</tr>
+	<script>
+		function validate()
+		{
+			var pas=document.form1.PWD.value;
+			if(pas=="")
+			{
+				document.getElementById("Pass").innerHTML="* Please enter your password";
+				document.form1.PWD.focus();
+				return false;
+			}
+			else if(pas.length < 8 || pas.length > 10)
+			{
+				document.getElementById("Pass").innerHTML="* Password should be between 8 to 10 characters";
+				document.form1.PWD.focus();
+				return false;
+			}
+			else{
+				document.getElementById("Pass").innerHTML="";
+			}
+			var cpas=document.form1.CPWD.value;
+			if(cpas=="")
+			{
+				document.getElementById("CPass").innerHTML="* Please enter your password";
+				document.form1.CPWD.focus();
+				return false;
+			}
+			else if(cpas != pas)
+			{
+				document.getElementById("CPass").innerHTML="* Password and confirm Password should match";
+				document.form1.CPWD.focus();
+				return false;
+			}
+			else
+			{
+				document.getElementById("CPass").innerHTML="";
+			}
+		}
+	</script>
+	</body>
+</html>
